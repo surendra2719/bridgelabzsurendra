@@ -1,18 +1,16 @@
 package com.bridgelabz.functional;
-import java.util.Scanner;
-import java.util.*;
+import com.bridgelabz.utlity.utility;
 public class twodarray 
 {
 
 	public static void main(String[] args) 
 	{
 		
-      Scanner scan = new Scanner(System.in);
+    
       System.out.println("enter number of rows");
-      int rows=scan.nextInt();
-      Scanner sc = new Scanner(System.in);
+      int rows=utility.getInt();
       System.out.println("enter number of columns");
-      int columns=sc.nextInt();
+      int columns=utility.getInt();
        String arr[][] =new String[rows][columns];
        System.out.println("enter the elements");
        int j=0;
@@ -20,7 +18,7 @@ public class twodarray
 		{
 			for(j=0;j<columns;j++) 
 			{
-				arr[i][j]=sc.next();
+				arr[i][j]=utility.getString();
 			}
 			
 		}
