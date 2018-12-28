@@ -2,7 +2,7 @@ package com.bridgelabz.functional;
 
 import com.bridgelabz.utlity.utility;
 
-public class windchil {
+public class Windchil {
 
 	public static void main(String[] args) {
 	System.out.println("enter the value of t and v");

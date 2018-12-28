@@ -1,6 +1,6 @@
 package com.bridgelabz.functional;
 import com.bridgelabz.utlity.*;
-public class flipcoin 
+public class Flipcoin 
 {
 
 	public static void main(String[] args) 

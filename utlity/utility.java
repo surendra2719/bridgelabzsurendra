@@ -68,6 +68,15 @@ public class utility
 		double w=35.74+0.6215+(0.4275*t-35.75)*Math.pow(v,0.16);
 		return w;
 	}
+	public static char[] Tochararray(String s2) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	public static char[] covertionOfStringToCharacterArray(String s1) 
+	{
+		char[] c1 = s1.toCharArray();
+		return c1;
+	}
 }
 
 

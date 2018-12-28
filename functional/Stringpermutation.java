@@ -2,7 +2,7 @@ package com.bridgelabz.functional;
 
 import com.bridgelabz.utlity.utility;
 
-public class stringpermutation {
+public class Stringpermutation {
 
 
 	private static void swap(char[] ch, int i, int j)

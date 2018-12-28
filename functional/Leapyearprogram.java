@@ -1,7 +1,7 @@
 package com.bridgelabz.functional;
 import  com.bridgelabz.utlity.*;
 
-public class leapyearprogram
+public class Leapyearprogram
 {
 	public static void main(String[]args)
 {

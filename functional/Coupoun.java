@@ -5,7 +5,7 @@ import java.util.Random;
 
 import com.bridgelabz.utlity.utility;
 
-public class coupoun {
+public class Coupoun {
 
 	public static void main(String[] args) {
 		System.out.println("enter distict coupoun number ");

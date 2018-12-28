@@ -1,6 +1,6 @@
 package com.bridgelabz.functional;
 import com.bridgelabz.utlity.utility;
-public class twodarray 
+public class Twodarray 
 {
 
 	public static void main(String[] args) 

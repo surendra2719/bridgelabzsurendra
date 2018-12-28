@@ -2,7 +2,7 @@ package com.bridgelabz.functional;
 
 import com.bridgelabz.utlity.utility;
 
-public class distanceprogram {
+public class Distanceprogram {
 	public static void main(String[] args) {
 		System.out.println(" enter the value of a ");
 		double a=utility.getDouble();

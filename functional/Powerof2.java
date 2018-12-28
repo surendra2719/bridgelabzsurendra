@@ -2,7 +2,7 @@ package com.bridgelabz.functional;
 
 import com.bridgelabz.utlity.utility;
 
-public class powerof2 {
+public class Powerof2 {
 
 	public static void main(String[] args) 
 	{

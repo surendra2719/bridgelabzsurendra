@@ -2,7 +2,7 @@ package com.bridgelabz.functional;
 
 import com.bridgelabz.utlity.utility;
 
-public class quadraticprogram {
+public class Quadraticprogram {
 
 	public static void main(String[] args) 
 	{
