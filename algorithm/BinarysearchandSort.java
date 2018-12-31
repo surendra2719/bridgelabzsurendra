@@ -8,5 +8,7 @@ public class BinarysearchandSort
 	   utility.Binarysearchofstring();
 	   utility.insertionSortOfInteger();
 	   utility.insertionSortOfString();
+	   utility.bubbleSortOfInteger(); 
+	   utility. bubbleSortOfString();
 }
 }

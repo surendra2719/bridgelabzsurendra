@@ -218,6 +218,92 @@ public static void insertionSortOfString()
 	
 	System.out.println("time taken for insertion sort of String "+(StopTime-startTime));
 }
+public static void bubbleSortOfInteger() 
+{
+	System.out.println("enter number of intergers");
+	int n = utility.getInt();
+	int[] array = new int[n];
+	System.out.println("enter integers");
+	for(int i=0 ;i<=array.length-1; i++)
+	{
+		array[i] = utility.getInt();
+		
+	}
+	long startTime = System.nanoTime();
+	long StopTime = 0;
+	for(int j=0;j<=array.length-1;j++)
+	{
+		for(int k=0;k<=array.length-2;k++)
+		{
+			if(array[k]>array[k+1])
+			{
+				int temp = array[k];
+				array[k] = array[k+1];
+				array[k+1] = temp;
+			}
+		}
+	}
+	StopTime = System.nanoTime();
+	for(int index = 0;index<=array.length-1;index++)
+	{
+		System.out.println(array[index]);
+	}
+	System.out.println("time taken for bubble sort of integer "+(StopTime-startTime));
+	
+}
+public static void bubbleSortOfString()
+{
+	System.out.println("enter string");
+	String EnteredString = utility.getNextLine();
+	String[] array = EnteredString.split(" ");
+	long startTime = System.nanoTime();
+	long StopTime = 0;
+			for(int j=0;j<=array.length-1;j++)
+			{
+				for(int k=0;k<=array.length-2;k++)
+				{
+					if(array[k].compareTo(array[k+1])>0)
+					{
+						String temp = array[k];
+						array[k] = array[k+1];
+						array[k+1] = temp;
+					}
+				}
+			}
+			StopTime = System.nanoTime();
+			for(int index = 0;index<=array.length-1;index++)
+			{
+				System.out.println(array[index]);
+			}	
+			System.out.println("time taken for bubble sort of String "+(StopTime-startTime));
+}
+
+public static int dayOfWeek(int d, int m, int y) 
+{
+	int y0 = y - (14 - m) / 12;
+	int x = y0 + y0 / 4 - y0 / 100 + y0 / 400;  
+	int m0 = m + 12 * ((14 - m) / 12) - 2;
+	int d0 = (d + x + (31 * m0) / 12) % 7;
+	return d0;
+}
+public static int TemperatureConversion(int tem, char t) 
+{
+	int conver;
+	if (t == 'c' || t == 'C') 
+	{
+		conver = (tem * 9 / 5) + 32;
+	} 
+	else if (t == 'f' || t == 'F') 
+	{
+		conver = (tem - 32) * 5 / 9;
+	} 
+	else 
+	{
+		System.out.println("Enter correct input");
+		return 0;
+	}
+	return conver;
+}
 }
 
 
