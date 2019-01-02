@@ -313,7 +313,22 @@ public static double temparatureconverter()
 	System.out.println("entered input is wrong please try again ");	
 	}
 	return choice;
-}}
+}
+public static double monthlypack(double p, double y ,double r)
+{
+	double r0=r/(12*100);
+	double n=12*y;
+	double payment=p*r0/(1-Math.pow(1+r, -n));
+	return payment;
+}
+
+// TODO Auto-generated method stub
+public	static int swapNibbles(int x) 
+	{ 
+		return ((x & 0x0F) << 4 | (x & 0xF0) >> 4); 
+	} 
+	// Driver code 
+}
 
 
 
