@@ -328,6 +328,40 @@ public	static int swapNibbles(int x)
 		return ((x & 0x0F) << 4 | (x & 0xF0) >> 4); 
 	} 
 	// Driver code 
+     public static void toBinary()
+     {
+    	 System.out.println("enter the value of decimal");
+         int number=utility.getInt();
+        
+         int temp=number;
+         int rem;
+         int decimal=0;
+         String result="";
+         while(number>=0)
+         {
+        	 rem=number%2;
+        	 result=rem+result;
+        	 number=number/2;
+         }
+         System.out.println("binary value of"+temp+"is"+result);
+         int index=0;
+         for(int i=result.length()-1;i>=0;i--)
+         {
+        	char output=result.charAt(index);
+        	index++;
+        	int convertedNumber=Character.getNumericValue(output);
+        	decimal=(int)(convertedNumber*Math.pow(2, i)+decimal);
+        	
+         }
+         if(temp==decimal)
+         {
+        	 System.out.println("decimal and binary numbers are equal");
+         }
+         else
+         {
+        	 System.out.println("decimal and binary numbers are not equal");
+         }
+     }
 }
 
 
