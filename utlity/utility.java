@@ -5,6 +5,7 @@ import java.util.Random;
 public class utility 
 {
 	static Scanner sc = new Scanner(System.in);
+	
 		public static int getInt()
 		{
 		int integerValue = sc.nextInt();
@@ -286,25 +287,33 @@ public static int dayOfWeek(int d, int m, int y)
 	int d0 = (d + x + (31 * m0) / 12) % 7;
 	return d0;
 }
-public static int TemperatureConversion(int tem, char t) 
-{
-	int conver;
-	if (t == 'c' || t == 'C') 
+public static double temparatureconverter()
+{  	
+	System.out.println("enter 1 to convert celcius to fahrenheit");
+	
+	System.out.println("enter 2 to covert fahrenheit to celcius");
+	int choice=utility.getInt();
+
+	if(choice==1)
 	{
-		conver = (tem * 9 / 5) + 32;
-	} 
-	else if (t == 'f' || t == 'F') 
-	{
-		conver = (tem - 32) * 5 / 9;
-	} 
-	else 
-	{
-		System.out.println("Enter correct input");
-		return 0;
+		System.out.println("enter the temparature in celcius");
+		double temparature=utility.getDouble();
+		double converted=(9/5.0*(temparature)+32);
+		System.out.println("converted temparature in fahrenheit "+converted);
 	}
-	return conver;
+	else if(choice==2)
+	{
+		System.out.println("enter the temparature in fahrenheit");
+		double temparature=utility.getDouble();
+		double converted=5/9.0*(temparature-32);
+		System.out.println("converted temparature in celcius "+converted);
 }
-}
+	else
+	{
+	System.out.println("entered input is wrong please try again ");	
+	}
+	return choice;
+}}
 
 
 
