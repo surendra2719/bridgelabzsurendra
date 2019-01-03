@@ -337,7 +337,7 @@ public	static int swapNibbles(int x)
          int rem;
          int decimal=0;
          String result="";
-         while(number>=0)
+         while(number>=1)
          {
         	 rem=number%2;
         	 result=rem+result;
