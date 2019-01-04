@@ -380,7 +380,7 @@ return t;
      }
      public static void binarysearchstringinfile()throws FileNotFoundException
      {
-     File file = new File("/home/bridgeit/eclipse-workspace/Functional programs/src/com/bridgelabz/surendra royal");
+     File file = new File("/home/bridgeit/SURENDRA");
      Scanner scan=new Scanner(file);
      String name=utility.getNextLine();
      String[]array=name.split(" ");
