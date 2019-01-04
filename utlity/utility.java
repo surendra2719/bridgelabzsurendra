@@ -339,7 +339,10 @@ public	static int swapNibbles(int x)
          int temp=number;
          int rem;
          String result="";
+<<<<<<< HEAD
          int decimal=0;
+=======
+>>>>>>> 7b1f681ae884859a651043dcfc47ecac86e43bab
          while(number>=1)
          {
         	 rem=number%2;
