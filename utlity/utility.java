@@ -1,5 +1,8 @@
 package com.bridgelabz.utlity;
 import java.util.Scanner;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Random;
 public class utility 
@@ -335,22 +338,22 @@ public	static int swapNibbles(int x)
         
          int temp=number;
          int rem;
-         int decimal=0;
          String result="";
-         while(number>=0)
+         int decimal=0;
+         while(number>=1)
          {
         	 rem=number%2;
         	 result=rem+result;
         	 number=number/2;
          }
-         System.out.println("binary value of"+temp+"is"+result);
+         System.out.println(" binary value of "+temp+" is "+result);
          int index=0;
          for(int i=result.length()-1;i>=0;i--)
          {
         	char output=result.charAt(index);
         	index++;
         	int convertedNumber=Character.getNumericValue(output);
-        	decimal=(int)(convertedNumber*Math.pow(2, i)+decimal);
+        	decimal=(int)(convertedNumber*(Math.pow(2, i)+decimal));
         	
          }
          if(temp==decimal)
@@ -362,7 +365,51 @@ public	static int swapNibbles(int x)
         	 System.out.println("decimal and binary numbers are not equal");
          }
      }
+     public static double squarertnon(double c)
+     {
+    	 double t=c;
+    	 double epsilon =1e-15;
+    	 while(Math.abs((t-c/t))>epsilon*t)
+    	 {
+    		 t=((c/t+t)/2);
+    	}
+return t;
+     }
+     public static void binarysearchstringinfile()throws FileNotFoundException
+     {
+     File file = new File("/home/bridgeit/eclipse-workspace/Functional programs/src/com/bridgelabz/surendra royal");
+     Scanner scan=new Scanner(file);
+     String name=utility.getNextLine();
+     String[]array=name.split(" ");
+     Arrays.sort(array);
+     for(String k :array)
+     {
+     System.out.println(k);
+     
+     
 }
+System.out.println("enter an search value");
+String searchvalue=utility.getString();
+int firstindex=0;
+int lastindex=0;
+while(firstindex<=lastindex)
+{
+	int middlevalue=((firstindex+lastindex)/2);
 
-
-
+if(searchvalue.compareTo(array[middlevalue])==0)
+{
+	System.out.println("value found at"+middlevalue);
+	break;
+}
+else if(searchvalue.compareTo(array[middlevalue])>0)
+		{
+	        firstindex=middlevalue+1;
+		}
+else
+{
+    lastindex=middlevalue-1;
+}
+}
+     }
+    
+}
